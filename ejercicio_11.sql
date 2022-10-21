@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 21-10-2022 a las 00:32:59
+-- Tiempo de generación: 21-10-2022 a las 20:15:56
 -- Versión del servidor: 8.0.28
 -- Versión de PHP: 7.4.26
 
@@ -47,25 +47,12 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-SELECT  telefono FROM `usuarios` WHERE saldo <= 300;
-('655-330-5736'),
-('655-143-4181'),
-('655-143-3922'),
-('655-137-1279'),
-('655-100-8260'),
-('655-145-2586'),
-('655-330-5514'),
-('655-330-3263'),
-('655-330-3871'),
-('655-143-3952'),
-('655-145-6049'),
-('655-137-4253'),
-('655-100-1351'),
-('655-145-4992'),
-('655-100-6517'),
-('655-330-5143'),
-('655-143-4019'),
-('655-100-5085');
+SELECT email FROM `usuarios` WHERE email LIKE ('%gmail.com');
+('oscar@gmail.com'),
+('francisco@gmail.com'),
+('roman@gmail.com'),
+('brenda2@gmail.com'),
+('lucia@gmail.com');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

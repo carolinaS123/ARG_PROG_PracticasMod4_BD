@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`nombre`, `telefono`) VALUES
+SELECT nombre, telefono FROM `usuarios` WHERE  marca IN('NOKIA', 'BLACKBERRY', 'SONY'); 
 ('JOSE', '655-143-3922'),
 ('LUIS', '655-100-8260'),
 ('DANIEL', '655-145-2586'),

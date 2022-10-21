@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`usuario`) VALUES
+SELECT usuario FROM `usuarios` WHERE nivel IN('1', '2', '3');
 ('BRE2271'),
 ('OSC4677'),
 ('JOS7086'),

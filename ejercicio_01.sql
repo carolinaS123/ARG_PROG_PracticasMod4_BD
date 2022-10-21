@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`nombre`) VALUES
+SELECT nombre FROM `usuarios`;
 ('BRENDA'),
 ('OSCAR'),
 ('JOSE'),

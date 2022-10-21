@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`SUM(saldo)`) VALUES
+SELECT SUM(saldo) FROM `usuarios` WHERE compania = 'NEXTEL';
 (150);
 COMMIT;
 

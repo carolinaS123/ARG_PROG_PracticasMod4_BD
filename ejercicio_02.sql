@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `Usuarios`
 --
 
-INSERT INTO `Usuarios` (`MAX(saldo)`) VALUES
+SELECT MAX(saldo) FROM Usuarios WHERE sexo='M';
 (500);
 COMMIT;
 

@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`compania`, `usuario`) VALUES
+SELECT compania, COUNT(*) AS usuario FROM `usuarios` GROUP BY compania;
 (IUSACELL, 6),
 (TELCEL, 3),
 (MOVISTAR, 2),

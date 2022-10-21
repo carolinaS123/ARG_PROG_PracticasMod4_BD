@@ -15,17 +15,25 @@ en tu base de datos MySQL o también podes aplicar las consultas directamente en
     6. Listar los números de teléfono con saldo menor o igual a 300
     SELECT  telefono FROM `usuarios` WHERE saldo <= 300;
     7. Calcular la suma de los saldos de los usuarios de la compañía telefónica NEXTEL
-    SELECT SUM(saldo) FROM `usuarios` WHERE compania = 'NEXTEL'
+    SELECT SUM(saldo) FROM `usuarios` WHERE compania = 'NEXTEL';
     8. Contar el número de usuarios por compañía telefónica
     SELECT compania, COUNT(*) AS usuario FROM `usuarios` GROUP BY compania;
     9. Contar el número de usuarios por nivel
+    SELECT nivel, COUNT(*) AS usuario FROM `usuarios` GROUP BY nivel;
     10. Listar el login de los usuarios con nivel 2
+    SELECT usuario FROM `usuarios` WHERE nivel = 2;
     11. Mostrar el email de los usuarios que usan gmail
+    SELECT email FROM `usuarios` WHERE email LIKE ('%gmail.com');
     12. Listar nombre y teléfono de los usuarios con teléfono LG, SAMSUNG o MOTOROLA
+    SELECT nombre, telefono FROM `usuarios` WHERE marca IN('LG', 'SAMSUNG', 'MOTOROLA');
     13. Listar nombre y teléfono de los usuarios con teléfono que no sea de la marca LG o SAMSUNG
+    SELECT nombre, telefono FROM `usuarios` WHERE marca NOT IN('LG', 'SAMSUNG');
     14. Listar el login y teléfono de los usuarios con compañía telefónica IUSACELL
+    SELECT usuario, telefono FROM `usuarios` WHERE compania = 'IUSACELL';
     15. Listar el login y teléfono de los usuarios con compañía telefónica que no sea TELCEL
+    SELECT usuario, telefono FROM `usuarios` WHERE compania NOT IN('TELCEL');
     16. Calcular el saldo promedio de los usuarios que tienen teléfono marca NOKIA
+    SELECT AVG(saldo) FROM `usuarios` WHERE marca = 'NOKIA';
     17. Listar el login y teléfono de los usuarios con compañía telefónica IUSACELL o AXEL
     18. Mostrar el email de los usuarios que no usan yahoo
     19. Listar el login y teléfono de los usuarios con compañía telefónica que no sea TELCEL o IUSACELL

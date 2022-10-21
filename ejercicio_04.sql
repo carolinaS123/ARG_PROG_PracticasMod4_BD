@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`COUNT(*)`) VALUES
+SELECT COUNT(*) FROM `usuarios` WHERE NOT activo OR saldo <= 0;
 (7);
 COMMIT;
 
