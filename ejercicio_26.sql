@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 21-10-2022 a las 00:24:49
+-- Tiempo de generación: 23-10-2022 a las 01:48:30
 -- Versión del servidor: 8.0.28
 -- Versión de PHP: 7.4.26
 
@@ -47,22 +47,24 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-SELECT usuario FROM `usuarios` WHERE nivel IN(1, 2, 3);
-('BRE2271'),
-('OSC4677'),
-('JOS7086'),
-('LUI7072'),
-('ROM6520'),
-('JES4752'),
-('DIA6570'),
-('RIC8283'),
-('BRE8106'),
-('LUC4982'),
-('ELP2984'),
-('JES9640'),
-('LET4015'),
-('LUI1076'),
-('HUG5441');
+SELECT nombre, telefono FROM `usuarios` WHERE marca NOT LIKE('BLACKBERRY');
+('BRENDA', '655-330-5736'),
+('OSCAR', '655-143-4181'),
+('JOSE', '655-143-3922'),
+('LUIS', '655-137-1279'),
+('LUIS', '655-100-8260'),
+('DANIEL', '655-145-2586'),
+('ROMAN', '655-330-3263'),
+('BLAS', '655-330-3871'),
+('JESSICA', '655-143-6861'),
+('DIANA', '655-143-3952'),
+('RICARDO', '655-145-6049'),
+('BRENDA', '655-100-1351'),
+('JUAN', '655-100-6517'),
+('ELPIDIO', '655-145-9938'),
+('JESSICA', '655-330-5143'),
+('LUIS', '655-100-5085'),
+('HUGO', '655-137-3935');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

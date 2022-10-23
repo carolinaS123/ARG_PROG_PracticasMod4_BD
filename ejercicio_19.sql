@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 21-10-2022 a las 00:24:49
+-- Tiempo de generación: 23-10-2022 a las 00:10:45
 -- Versión del servidor: 8.0.28
 -- Versión de PHP: 7.4.26
 
@@ -47,22 +47,19 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-SELECT usuario FROM `usuarios` WHERE nivel IN(1, 2, 3);
-('BRE2271'),
-('OSC4677'),
-('JOS7086'),
-('LUI7072'),
-('ROM6520'),
-('JES4752'),
-('DIA6570'),
-('RIC8283'),
-('BRE8106'),
-('LUC4982'),
-('ELP2984'),
-('JES9640'),
-('LET4015'),
-('LUI1076'),
-('HUG5441');
+SELECT usuario, telefono FROM `usuarios` WHERE compania NOT IN('TELCEL', 'IUSACELL');
+('JOS7086', '655-143-3922'),
+('DAN2832', '655-145-2586'),
+('JAQ5351', '655-330-5514'),
+('BLA9739', '655-330-3871'),
+('DIA6570', '655-143-3952'),
+('VAL6882', '655-137-4253'),
+('BRE8106', '655-100-1351'),
+('JUA2337', '655-100-6517'),
+('ELP2984', '655-145-9938'),
+('LET4015', '655-143-4019'),
+('LUI1076', '655-100-5085'),
+('HUG5441', '655-137-3935');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

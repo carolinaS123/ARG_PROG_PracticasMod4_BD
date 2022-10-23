@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 21-10-2022 a las 00:24:49
+-- Tiempo de generación: 23-10-2022 a las 01:32:12
 -- Versión del servidor: 8.0.28
 -- Versión de PHP: 7.4.26
 
@@ -47,21 +47,17 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-SELECT usuario FROM `usuarios` WHERE nivel IN(1, 2, 3);
+SELECT usuario FROM `usuarios` WHERE nivel IN(0, 2);
 ('BRE2271'),
-('OSC4677'),
-('JOS7086'),
-('LUI7072'),
+('LUI6115'),
+('DAN2832'),
+('JAQ5351'),
 ('ROM6520'),
-('JES4752'),
-('DIA6570'),
+('BLA9739'),
 ('RIC8283'),
-('BRE8106'),
-('LUC4982'),
-('ELP2984'),
-('JES9640'),
+('VAL6882'),
+('JUA2337'),
 ('LET4015'),
-('LUI1076'),
 ('HUG5441');
 COMMIT;
 
